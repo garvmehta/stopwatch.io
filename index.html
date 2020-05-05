@@ -30,16 +30,19 @@
             box-shadow: 8px 8px 8px rgba(28, 40, 51, 0.5), -8px -8px 5px rgba(44, 62, 80, 0.6);
             border-radius: 50%;
         }
+        @font-face {
+            font-family: digitalfont;
+            src: url('digitalfont.ttf');
+        }
         
         #text {
             width: 200px;
             height: 300px;
             margin: 70px auto;
-            font-family: 'Orbitron', sans-serif;
         }
         
         #watch {
-            font-size: 35px;
+            font-size: 30px;
         }
         /*  Styling of button */
         
@@ -61,16 +64,16 @@
 <body>
     <div id="container">
         <div id="text">
-            <h1>STOPWATCH</h1>
+            <h1 style="font-family:digitalfont;">STOPWATCH</h1>
 
             <div id="watch">
-                <span style="font-size: 27px;">Min </span><span style="font-size: 27px;">Sec </span><span style="font-size: 27px;">Ms</span>
-                <span id="min">00</span>:<span id="sec">00</span>:<span id="ms">00</span>
+                <span style="font-size: 27px; font-family:digitalfont;" >Min </span><span style="font-size: 27px; font-family:digitalfont;">Sec </span><span style="font-size: 27px; font-family:digitalfont;">Ms</span>
+                <span id="min" style="font-family:digitalfont;">00</span>:<span id="sec" style="font-family:digitalfont;">00</span>:<span id="ms" style="font-family:digitalfont;">00</span>
             </div>
             <br>
-            <input type="button" onclick="start()" value="Start" class="btn">
-            <input type="button" value="Stop" onclick="Stop()" class="btn">
-            <input type="button" value="Reset" onclick="location.reload()" class="btn">
+            <input type="button" onclick="start()" value="Start" class="btn" style="font-family:digitalfont;">
+            <input type="button" value="Stop" onclick="Stop()" class="btn" style="font-family:digitalfont;">
+            <input type="button" value="Reset" onclick="location.reload()" class="btn" style="font-family:digitalfont;">
         </div>
     </div>
 </body>
